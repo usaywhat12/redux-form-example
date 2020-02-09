@@ -1,0 +1,7 @@
+<app-login 
+[state]="loginState$ | async"
+(submitted)="onLogin($event)"></app-login>
+<app-detail 
+[detail]="(loginState$ | async)?.detail"
+[error]="(loginState$ | async)?.error"
+></app-detail>

@@ -1,0 +1,10 @@
+<div class="flex-container">
+    <div  *ngIf="detail && !error">
+        <p>Username: {{detail.username}}</p>
+        <p>Password: {{detail.password}}</p>
+        <p>Date: {{detail.date}}</p>
+    </div>
+    <div  *ngIf="error">
+        <p style="color: red;">{{error}}</p>
+    </div>
+</div>
